@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-color: #8d8d8d;
+    color: #000000;
+}
+
+td {
+    width: 50%;
+}
+
+.footer {
+
+}
+
+
+.left_header {
+    text-align: center;
+    font-style: italic;
+}
+
+.right_header {
+    text-align: left;
+}
+
+.left_body {
+    text-align: right;
+    font-style: italic;
+}
+
+.right_body {
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.left_text {
+    text-align: left;
+    font-style: italic;
+}
+
+.right_text {
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+
+.span{
+    display: initial;
+    background: #000000;
+    color: #fcfcfc;
+    text-align: center;
+    border-radius: 50%;
+    padding: 0px 3px;
+    width: 1em;
+    height: 0;
+}
+
+/*TIMER*/
+
+.timer {
+    display: block;
+    border: 2px solid black;
+    margin: 15px 120px 15px 120px;
+}
+
+.timer span {
+    display: block;
+    text-align: center;
+    font-size: 31px;
+}
+
+.time {
+    display: flex;
+    font-size: 48px;
+    justify-content: center;
+}
+.time {
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.time::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 14px;
+}
+.time:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
+}
+
