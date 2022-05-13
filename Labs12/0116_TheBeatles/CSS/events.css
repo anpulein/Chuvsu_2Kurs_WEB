@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.pulse {
+    padding: 28px;
+    top: 1%;
+    left: 1%;
+
+}
+
+.fa-spin {
+    -webkit-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear;
+}
+
+.musics {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    font-family: sans-serif;
+    padding: 25px;
+}
+
+.musics .card .infBlock {
+    position: relative;
+    width: 260px;
+    height: 440px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 5px rgba(0,0,0,.2);
+    overflow: hidden;
+}
+
+.musics .card .infBlock:before {
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 257px;
+    border-radius: 50px;
+    background: linear-gradient(-90deg, #785ad6, #4aabce);
+    top: -55px;
+    left: 45px;
+    z-index: -10;
+}
+
+.musics .infBlock .fa-li {
+    left: 227px;
+    top: 5px;
+}
+
+.musics .infBlock .Name {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 18px;
+    left: 27px;
+    margin: 0;
+    font-size: 18px;
+    font-family: monospace;
+}
+
+.musics .infBlock .textInform {
+    position: relative;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    width: 82%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #545353;
+}
+
+.musics .infBlock audio {
+    width: 257px;
+    height: 35px;
+    bottom: 9%;
+    position: absolute;
+}
+
+
+.information {
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.information .exam_02 {
+    padding: 20px 40px; /*отступ вложенного текста от рамки */
+    background: #c0c2db; /* фон рамки */
+    font-size: 20px; /* размер шрифта */
+    border: 2px dashed #7ba1ff; /* размер, форма и цвет рамки */
+    border-radius: 10px; /*  радиус скругления углов рамки */
+    box-shadow: 0 0 0 4px #bee9ff, 2px 1px 6px 4px rgb(0, 0, 0); /* смещение, размер и цвет тени рамки*/
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+}
+
+.information .exam_02 ul>li[title="1_факт"] {
+    list-style-type: square;
+    font-family: 'Ramaraja', serif;
+}
+
+.information .exam_02 ul>li {
+    list-style-type: circle;
+    font-family: 'Ramaraja', serif;
+}
+
+
+@media (max-width: 900px) {
+    .musics {
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-evenly;
+        flex-direction: column-reverse;
+    }
+}
+
+
+
