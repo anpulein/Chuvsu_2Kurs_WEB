@@ -9,8 +9,8 @@ _Faculty_: Информатики и вычислительной техники
 _Department_: Вычислительной техники
 
 # Body
-_Group_: ИВТ-41-20
-_Student_: Галкин Дмитрий
+_Group_: ИВТ-41-20  
+_Student_: Галкин Дмитрий  
 _Teacher_: Первова Наталья Викторовна
 
 # Table of contents
@@ -28,6 +28,6 @@ _Teacher_: Первова Наталья Викторовна
 | HTML  | ![HTML](../main/title_page/html.png)            | `Markup language`        |
 | CSS   | ![CSS](../main/title_page/css.png)              | `Style sheet language`   |
 | JS    | ![JS](../main/title_page/js.png)                | `Programming language`   |
-| CLion | <img src="title_page/webStorm.svg" height='64'> | `IDE`                    |
+| CLion | <img src="title_page/webStorm.png" height='64'> | `IDE`                    |
 
 [(Back to top)](#table-of-contents)
