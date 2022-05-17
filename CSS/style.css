@@ -10,13 +10,52 @@
     background: #060AB2;
   }
 
+
+.header_text {
+    background: #f8f5f5;
+    padding: 50px 20px;
+    text-align: center;
+}
+.header_text h1 {
+    font-family: 'Righteous', cursive;
+    position: relative;
+    color: #000000;
+    display: inline-block;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    font-size: 3em;
+    padding: 11px 60px;
+    margin: 0;
+    line-height: 1;
+}
+.header_text h1:before, .header_text h1:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    background: repeating-linear-gradient(180deg, transparent, transparent 2px, #000000 2px, #000000 4px);
+}
+.header_text h1:before {left: 0;}
+.header_text h1:after {right: 0;}
+@media (max-width: 420px) {
+    .header_text h1 {font-size: 2em;}
+}
+
   .chuvsu-game {
-      width: 640px;
-      height: 640px;
+      /*width: 640px;*/
+      /*height: 640px;*/
+      width: 760px;
+      height: 760px;
       margin: auto;
       display: flex;
       flex-wrap: wrap;
       perspective: 1000px;
+      flex-direction: column;
+      align-content: space-around;
+      white-space: nowrap;
   }
 
   .chuvsu-card {
