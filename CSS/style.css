@@ -11,12 +11,12 @@
   }
 
 
-.header_text {
+.nav {
     background: #f8f5f5;
     padding: 50px 20px;
     text-align: center;
 }
-.header_text h1 {
+.nav h1 {
     font-family: 'Righteous', cursive;
     position: relative;
     color: #000000;
@@ -27,8 +27,9 @@
     padding: 11px 60px;
     margin: 0;
     line-height: 1;
+    margin-bottom: 2px;
 }
-.header_text h1:before, .header_text h1:after {
+.nav h1:before, .nav h1:after {
     content: "";
     position: absolute;
     top: 0;
@@ -38,10 +39,36 @@
     border-right: 2px solid;
     background: repeating-linear-gradient(180deg, transparent, transparent 2px, #000000 2px, #000000 4px);
 }
-.header_text h1:before {left: 0;}
-.header_text h1:after {right: 0;}
+.nav h1:before {left: 0;}
+.nav h1:after {right: 0;}
 @media (max-width: 420px) {
-    .header_text h1 {font-size: 2em;}
+    .nav h1 {font-size: 2em;}
+}
+
+.nav .functional {
+    margin-top: 2px;
+}
+
+.nav .functional .reset {
+    min-width: 100px;
+    font-family: inherit;
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #4676d7;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.nav .functional .reset:hover {
+    background: #1d49aa;
+}
+
+.nav .functional .reset:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
 }
 
   .chuvsu-game {

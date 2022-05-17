@@ -54,8 +54,18 @@ const list_cards_names = {
 //     2: [],
 //     3: [],
 //     5: [], creatingCard
-//
 // }
+
+countPoint = 0; // Кол-во очков пользователя
+const sizeCards = 9; // Кол-во пар карт на поле
+const point = document.querySelector('.point_text'); // Вывод очков
+
+function textPoint() {
+    point.textContent = "Количество очков: " + countPoint;
+}
+textPoint();
+
+
 
 const section = document.querySelector('.chuvsu-game');
 
@@ -87,13 +97,11 @@ function creatingCard(card, index) {
 * Добавление карточек на поле
  */
 function addCards () {
-    for (let i = 1; i <= 9; i++) {
+    for (let i = 1; i <= sizeCards; i++) {
         let card = creatingCard(document.createElement('div'), i);
 
         section.appendChild(card);
         section.appendChild(card.cloneNode(true));
-
-
     }
 }
 
@@ -144,6 +152,11 @@ function disableCards() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
 
+    countPoint++;
+    textPoint();
+
+    if (countPoint == sizeCards) { win(); }
+
     resetBoard(); // сброс переменных
 }
 
@@ -159,11 +172,19 @@ function enableCards() {
 
         resetBoard();
     }, 1500);
+
 }
 
+/*
+* Ссброс всех значений
+ */
 function resetBoard() {
     [isFlippedsCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
+}
+
+function win() {
+    alert("Победа!!!");
 }
 
 /*
