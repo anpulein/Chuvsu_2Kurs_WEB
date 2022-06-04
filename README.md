@@ -12,6 +12,7 @@ _Department_: Вычислительной техники
 _Group_: ИВТ-41-20  
 _Student_: Галкин Дмитрий  
 _Teacher_: Первова Наталья Викторовна
+_Semestr_: 4-5
 
 # Table of contents
 - [Title-page](#Title-page)
@@ -31,3 +32,7 @@ _Teacher_: Первова Наталья Викторовна
 | CLion | <img src="title_page/webStorm.png" height='64'> | `IDE`                    |
 
 [(Back to top)](#table-of-contents)
+
+# Information about the teacher
+
+- Лабы лучше сдавать в срок - это поможет с легкостью получить зачет и хорошо поможет на экзамене.
