@@ -22,7 +22,7 @@ _Semestr_: 4-5
 
 # Software
 
-### 🤖 Software used
+### 🤖 Software used (semestr 4)
 
 | Name  | Icons                                           | Information              |
 |-------|-------------------------------------------------|--------------------------|
