@@ -11,7 +11,7 @@ _Department_: Вычислительной техники
 # Body
 _Group_: ИВТ-41-20  
 _Student_: Галкин Дмитрий  
-_Teacher_: Первова Наталья Викторовна
+_Teacher_: Первова Наталья Викторовна   
 _Semestr_: 4-5
 
 # Table of contents
